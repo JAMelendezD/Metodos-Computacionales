@@ -65,7 +65,7 @@ def animate(j):
 
 
 
-anim = animation.FuncAnimation(fig, animate, init_func=init, frames=100, interval=20, blit=True)
+anim = animation.FuncAnimation(fig, animate, init_func=init, frames=500, interval=20, blit=True)
 
 anim.save('cuerda.mp4', fps=60, extra_args=['-vcodec', 'libx264'])
 
@@ -131,7 +131,7 @@ def animateT(j):
 	line = ax.plot_surface(X,Y,z2,cmap=cm.autumn)
 	return line,
 
-anim = animation.FuncAnimation(figT, animateT,frames=100, interval=20, blit=True)
+anim = animation.FuncAnimation(figT, animateT,frames=500, interval=20, blit=True)
 anim.save('Tambor.mp4', fps=60, extra_args=['-vcodec', 'libx264'])
 
 
