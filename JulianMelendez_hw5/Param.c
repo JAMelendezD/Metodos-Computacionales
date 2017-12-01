@@ -11,7 +11,7 @@ float similitud(float *observado, float *modelo, int len)
 	int i;
 	for(i=0;i<len;i++)
 	{
-		suma = suma + ((observado[i]-modelo[i])*(observado[i]-modelo[i]));
+		suma = suma + ((observado[i]-modelo[i])/observado[i]);
 	}
 	chi = suma/2.0;
 	return exp(-chi);
